@@ -9,5 +9,6 @@ ios_r = {
 
 net_connect = ConnectHandler(**ios_r) 
 #send_command  use to send one command
+#we can use multiple commands with send_config_set()
 output = net_connect.send_command('show version')
 print(output)
