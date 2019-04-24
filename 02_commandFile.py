@@ -1,5 +1,6 @@
 from netmiko import ConnectHandler
 
+#The splitlines() returns a list of lines in the string.
 with open('commandsFile') as cf:
 	commands_to_send = cf.read().splitlines()
 
