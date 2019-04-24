@@ -1,0 +1,8 @@
+do show vlan
+
+vlan 10
+ name NetMiko
+vlan 20
+ name ParaMiko
+
+do show vlan

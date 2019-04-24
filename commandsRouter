@@ -1,0 +1,8 @@
+interface loopback 10
+ip address 192.168.10.10 255.255.255.0
+no shutdown
+
+router ospf 1
+ network 192.168.10.0 0.0.0.255 area 0
+
+do show ip protocols
