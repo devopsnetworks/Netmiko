@@ -1,8 +1,8 @@
 from getpass import getpass
 from netmiko import ConnectHandler
-from netmiko.ssh_exception import NetMikoTimeoutException
-from paramiko.ssh_exception import SSHException
-from netmiko.ssh_exception import AuthenticationException
+from netmiko.ssh_exception import NetMikoTimeoutException # time out
+from paramiko.ssh_exception import SSHException # SSH configuration mistake / not enable
+from netmiko.ssh_exception import AuthenticationException # credential is not match
 
 username = raw_input ('Enter your SSH username :')
 password = getpass()
