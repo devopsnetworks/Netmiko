@@ -7,13 +7,15 @@ from netmiko.ssh_exception import AuthenticationException
 username = raw_input ('Enter your SSH username :')
 password = getpass()
 
+# this file contain the dedicated configurations for switches
 with open('commandsSwitch') as cf_s:
         commandsToSwitch = cf_s.read().splitlines()
-
+        
+# this file contain the dedicated configurations for routers
 with open('commandsRouter') as cf_r:
         commandsToRouter = cf_r.read().splitlines()
 
-
+# this file cntain the all devices and those credential information 
 with open('devicesFile') as df:
         devices_list = df.read().splitlines()
 
