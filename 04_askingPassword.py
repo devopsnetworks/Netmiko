@@ -1,6 +1,8 @@
 from getpass import getpass
 from netmiko import ConnectHandler
 
+#This username and password should match for all devices 
+
 username = raw_input ('Enter your SSH username :')
 password = getpass()
 
