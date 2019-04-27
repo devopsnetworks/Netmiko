@@ -10,6 +10,8 @@ with open('devicesFile') as df:
 
 for device in devices_list:
         print 'connecting to device' + device
+        
+        #separete username and password for all device
         username = raw_input ('Enter your SSH username :')
         password = getpass()
         ip_address_of_device = device
